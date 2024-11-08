@@ -31,9 +31,14 @@ public class Solved1267 {
         int sumY = 0;
         int sumX = 0;
 
+        int sum = 0;
+
         for (int i = 0; i < n; i++) {
             int a = s.nextInt();
 
+            if(a/15 < a/10){
+
+            }
         }
 
 

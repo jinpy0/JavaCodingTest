@@ -11,7 +11,7 @@ package com.java.bronze3;
 
 import java.util.Scanner;
 
-public class solved1085 {
+public class Solved1085 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         int x = s.nextInt();
