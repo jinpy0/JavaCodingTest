@@ -23,9 +23,20 @@ public class Solved10809 {
         }
 
         String str = sc.nextLine();
-
-        for (int i = 0; i < str.length() ; i++) {
-
+//         ascii 코드 a = 97, 인덱스로 접근하려면 -97 또는 -'a' 를 해서 접근을 하면 됨
+//        System.out.println(str.charAt(1));
+        for (int i = 0; i < str.length(); i++) {
+            int index = str.charAt(i) - 'a';
+            if (ab[index] == -1) {
+                ab[index] = i;
+            }
         }
+
+        for (int i = 0; i < ab.length; i++) {
+            System.out.print(ab[i] + " ");
+        }
+
     }
+
 }
+

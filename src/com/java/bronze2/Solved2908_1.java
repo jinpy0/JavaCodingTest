@@ -1,6 +1,8 @@
+package com.java.bronze2;
+
 import java.util.Scanner;
 
-public class Main {
+public class Solved2908_1 {
     static String change(String i){
         String changeNum = ""+ i.charAt(2) + i.charAt(1) + i.charAt(0);
         return changeNum;
