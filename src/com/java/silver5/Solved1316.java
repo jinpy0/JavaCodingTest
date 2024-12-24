@@ -12,8 +12,6 @@
 //출력
 //첫째 줄에 그룹 단어의 개수를 출력한다.
 
-
-
 package com.java.silver5;
 
 import java.io.*;
