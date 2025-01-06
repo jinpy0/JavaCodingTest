@@ -1,9 +1,11 @@
+package com.java.classes.class2;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Main {
+public class Solved2869_1 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
@@ -13,7 +15,6 @@ public class Main {
         int v = Integer.parseInt(st.nextToken());
 
         int count = (v - b) / (a - b);
-
         if ((v - b) % (a - b) != 0) {
             count++;
         }
