@@ -1,23 +1,25 @@
 package com.java.classes.class2;
 
-import java.io.*;
-import java.util.Arrays;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.*;
 
-public class Solved2751 {
+public class Solved2751_1 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
 
-        int[] arr = new int[n];
+        List<Integer> list = new ArrayList<>();
         for (int i = 0; i < n; i++) {
-            arr[i] = Integer.parseInt(br.readLine());
+            list.add(Integer.parseInt(br.readLine()));
         }
 
-        Arrays.sort(arr);
+        Collections.sort(list);
 
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i <n; i++) {
-            sb.append(arr[i]).append("\n");
+        for (int i : list) {
+            sb.append(i).append("\n");
         }
         System.out.println(sb);
     }
