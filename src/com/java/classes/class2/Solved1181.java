@@ -5,17 +5,21 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Solved1181 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         int N = Integer.parseInt(br.readLine());
-        String[] arr = new String[N];
 
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] = br.readLine();
+        Set<String> set = new HashSet<>();
+        for (int i = 0; i < N; i++) {
+            set.add(br.readLine());
         }
+
+        String[] arr = set.toArray(new String[0]);
 
         Arrays.sort(arr, new Comparator<String>() {
             @Override
@@ -27,7 +31,9 @@ public class Solved1181 {
             }
         });
 
-
+        for (String s : arr) {
+            System.out.println(s);
+        }
 
     }
 }
